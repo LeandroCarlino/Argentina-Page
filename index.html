@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,10 +13,32 @@
   <meta property="og:title" content="Argentina — un país en el fin del mundo">
   <meta property="og:description" content="Geografía, historia y datos de la República Argentina.">
   <meta property="og:locale" content="es_AR">
+  <meta property="og:url" content="https://leandrocarlino.github.io/Argentina-Page/">
+  <meta property="og:image" content="https://leandrocarlino.github.io/Argentina-Page/img/og-argentina.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/estilo.css">
   <script src="js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Country",
+    "name": "Argentina",
+    "alternateName": "República Argentina",
+    "url": "https://leandrocarlino.github.io/Argentina-Page/",
+    "image": "https://leandrocarlino.github.io/Argentina-Page/img/og-argentina.jpg",
+    "description": "País soberano de América del Sur, organizado como república democrática, representativa y federal, con 23 provincias y la Ciudad Autónoma de Buenos Aires.",
+    "containedInPlace": {
+      "@type": "Continent",
+      "name": "América del Sur"
+    }
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -25,7 +47,7 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="index.html">
-        <img src="img/sol-argentina.webp" alt="" width="320" height="315">
+        <img src="img/sol-argentina-160.webp" srcset="img/sol-argentina-160.webp 160w, img/sol-argentina.webp 320w" sizes="2.4rem" alt="" width="320" height="315">
         <span>Argentina</span>
       </a>
 
@@ -41,6 +63,7 @@
       <nav class="site-nav" id="menu-principal" aria-label="Principal">
         <ul>
           <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="html/provincias.html">Provincias</a></li>
           <li><a href="html/tablas.html">Estadísticas</a></li>
           <li><a href="html/galeria.html">Galería</a></li>
           <li><a href="html/formulario.html">Contacto</a></li>
@@ -52,7 +75,7 @@
   <main id="contenido">
     <section class="hero">
       <div class="wrap">
-        <img class="hero__sun" src="img/sol-argentina.webp" alt="" width="320" height="315">
+        <img class="hero__sun" src="img/sol-argentina.webp" srcset="img/sol-argentina-160.webp 160w, img/sol-argentina.webp 320w" sizes="13rem" alt="" width="320" height="315">
         <p class="kicker">República Argentina</p>
         <h1>Argentina</h1>
         <p class="lede">
@@ -154,6 +177,57 @@
           Tucumán.
         </p>
       </article>
+
+      <section class="article timeline-block" aria-labelledby="linea-titulo">
+        <h2 id="linea-titulo">Línea de tiempo</h2>
+        <ol class="timeline">
+          <li>
+            <time datetime="1516">1516</time>
+            <strong>Llegada al Río de la Plata</strong>
+            <p>La expedición de Juan Díaz de Solís explora el estuario y marca el inicio de la presencia europea en la región.</p>
+          </li>
+          <li>
+            <time datetime="1776">1776</time>
+            <strong>Virreinato del Río de la Plata</strong>
+            <p>La Corona española crea el virreinato con capital en Buenos Aires, separándolo del Virreinato del Perú.</p>
+          </li>
+          <li>
+            <time datetime="1810-05-25">1810</time>
+            <strong>Revolución de Mayo</strong>
+            <p>Se depone al último virrey y se forma la Primera Junta de gobierno: independencia de facto.</p>
+          </li>
+          <li>
+            <time datetime="1816-07-09">1816</time>
+            <strong>Declaración de la Independencia</strong>
+            <p>El Congreso de Tucumán proclama la independencia de las Provincias Unidas en San Miguel de Tucumán.</p>
+          </li>
+          <li>
+            <time datetime="1853">1853</time>
+            <strong>Constitución Nacional</strong>
+            <p>Se sanciona la Constitución que organiza el país como república federal, representativa y democrática.</p>
+          </li>
+          <li>
+            <time datetime="1947">1947</time>
+            <strong>Voto femenino</strong>
+            <p>La Ley 13.010 reconoce el derecho de las mujeres a votar y a ser elegidas.</p>
+          </li>
+          <li>
+            <time datetime="1983">1983</time>
+            <strong>Retorno a la democracia</strong>
+            <p>Tras la dictadura iniciada en 1976, las elecciones de octubre abren el período democrático que continúa hasta hoy.</p>
+          </li>
+          <li>
+            <time datetime="1994">1994</time>
+            <strong>Reforma constitucional</strong>
+            <p>La reforma de 1994 incorpora tratados de derechos humanos y crea la Ciudad Autónoma de Buenos Aires.</p>
+          </li>
+          <li>
+            <time datetime="2001">2001</time>
+            <strong>Crisis de diciembre</strong>
+            <p>La crisis social y económica desemboca en la renuncia del gobierno en medio de una fuerte protesta popular.</p>
+          </li>
+        </ol>
+      </section>
     </div>
   </main>
 

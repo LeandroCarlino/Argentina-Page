@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Provincias — Argentina</title>
+  <meta name="description" content="Las 24 jurisdicciones de la Argentina: capital, población del Censo 2022 y superficie, con mapa interactivo y filtro por región.">
+  <meta name="author" content="Leandro Matías Carlino Aráoz">
+  <meta name="theme-color" content="#74acdf">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Provincias — Argentina">
+  <meta property="og:description" content="23 provincias y la Ciudad Autónoma de Buenos Aires, con mapa interactivo.">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:url" content="https://leandrocarlino.github.io/Argentina-Page/html/provincias.html">
+  <meta property="og:image" content="https://leandrocarlino.github.io/Argentina-Page/img/og-argentina.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="flag-bar" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html">
+        <img src="../img/sol-argentina-160.webp" srcset="../img/sol-argentina-160.webp 160w, ../img/sol-argentina.webp 320w" sizes="2.4rem" alt="" width="320" height="315">
+        <span>Argentina</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18"></path>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="provincias.html" aria-current="page">Provincias</a></li>
+          <li><a href="tablas.html">Estadísticas</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="formulario.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <div class="wrap">
+      <header class="page-head">
+        <p class="kicker">24 jurisdicciones</p>
+        <h1>Provincias</h1>
+        <p>
+          23 provincias y la Ciudad Autónoma de Buenos Aires. Elegí una región para filtrar
+          el listado, o tocá una provincia en el mapa.
+        </p>
+      </header>
+
+      <section class="map-section" aria-labelledby="mapa-titulo">
+        <div class="map-figure">
+          <h2 id="mapa-titulo" class="visually-hidden">Mapa político de la Argentina</h2>
+          <svg class="map" viewBox="0 0 380 810" role="group" aria-label="Mapa político de la Argentina">
+  <a href="#prov-ar-d" aria-label="San Luis"><path id="ar-d" data-name="San Luis" d="M124.2 245.1L137.3 248.5L138.6 246.9L142.8 247.9L144.7 245.9L151.4 246.1L158.7 250.8L159.3 256.5L164.5 255.9L165.6 261.5L163.4 273.0L160.6 277.7L161.3 345.9L132.1 346.0L135.2 325.1L133.6 317.5L129.9 311.1L129.7 306.5L128.8 305.7L129.3 302.9L130.6 302.4L131.6 296.3L127.6 293.2L122.6 284.2L120.8 270.1L122.1 267.1L119.6 261.6L119.9 255.7L117.9 253.7L118.0 245.4L124.1 245.0Z"><title>San Luis</title></path></a>
+  <a href="#prov-ar-s" aria-label="Santa Fe"><path id="ar-s" data-name="Santa Fe" d="M238.8 151.2L280.0 151.2L278.8 154.5L276.6 154.3L275.7 156.6L276.9 163.2L274.0 176.3L271.2 178.3L270.0 181.0L268.3 181.5L267.9 183.9L266.3 185.2L266.5 189.4L265.2 196.1L267.0 200.1L265.7 205.7L264.2 206.5L265.1 208.8L264.0 209.9L265.4 212.3L264.9 215.7L265.7 217.3L259.4 227.2L258.7 230.1L256.7 231.3L256.0 235.0L252.4 237.6L252.4 239.1L249.8 241.2L246.5 242.3L246.2 246.4L245.0 247.8L246.2 250.2L245.4 252.2L245.8 256.4L243.9 260.9L245.8 270.5L249.3 276.1L253.0 277.4L253.9 279.6L250.9 284.3L249.9 288.4L242.0 286.4L225.9 306.7L203.7 306.7L222.1 275.8L224.6 273.1L224.5 267.4L221.6 265.1L222.7 263.5L222.2 260.6L219.9 255.0L216.8 251.4L217.4 248.3L216.0 241.3L218.2 239.0L223.6 218.0L218.1 211.6L226.1 151.2L237.8 151.2Z"><title>Santa Fe</title></path></a>
+  <a href="#prov-ar-t" aria-label="Tucumán"><path id="ar-t" data-name="Tucumán" d="M156.5 104.0L157.7 104.5L158.1 106.7L162.6 108.1L162.6 109.6L164.3 110.0L167.4 108.0L173.0 107.8L172.2 112.5L172.9 118.9L171.3 118.6L170.7 122.1L169.0 122.5L166.2 134.6L163.9 135.4L163.2 138.7L164.0 140.3L162.9 141.2L163.6 144.9L162.8 145.2L162.6 148.3L160.3 148.2L160.1 149.9L156.3 147.5L152.4 151.6L150.7 150.6L149.0 145.6L147.5 147.6L144.9 139.6L144.8 135.0L141.6 133.3L147.0 125.2L146.2 123.6L147.5 120.6L143.5 117.1L141.0 117.9L140.9 114.0L142.4 107.9L149.7 111.1L150.2 105.4L155.3 105.2L156.5 104.0Z"><title>Tucumán</title></path></a>
+  <a href="#prov-ar-y" aria-label="Jujuy"><path id="ar-y" data-name="Jujuy" d="M140.3 0.0L142.8 1.1L143.4 3.2L145.7 3.5L149.1 7.8L159.8 7.2L159.1 13.0L156.7 18.3L156.7 19.9L158.2 20.9L157.5 22.9L158.5 27.7L162.1 30.6L162.0 34.8L165.1 37.1L166.3 41.6L169.4 40.5L172.3 42.2L174.0 45.1L175.7 42.1L179.5 42.1L179.4 59.2L176.9 63.8L174.4 63.6L170.2 68.8L166.4 65.2L164.8 68.4L161.9 67.5L159.7 65.0L157.3 66.1L154.5 64.3L153.1 64.8L150.9 63.0L149.1 55.4L144.4 53.4L144.5 41.9L141.0 39.6L137.3 46.4L137.8 53.5L137.0 57.0L135.1 59.0L129.0 56.2L121.2 46.4L125.4 29.5L121.8 25.0L125.0 21.1L124.7 18.3L129.4 15.8L130.2 11.0L138.8 7.3L140.3 0.0Z"><title>Jujuy</title></path></a>
+  <a href="#prov-ar-g" aria-label="Santiago del Estero"><path id="ar-g" data-name="Santiago del Estero" d="M213.4 94.1L226.1 94.1L226.1 151.2L218.1 211.6L217.3 208.3L210.7 208.2L209.3 206.2L210.0 201.4L205.5 198.9L204.6 196.6L205.2 195.9L192.8 194.0L192.6 191.7L187.8 191.8L186.0 189.7L183.3 190.7L182.8 189.0L177.2 187.7L166.7 189.5L167.5 185.4L166.4 183.2L167.6 182.1L166.2 180.4L165.3 171.7L161.0 168.7L159.8 166.3L161.0 166.1L161.5 162.7L160.0 149.2L162.6 148.3L162.8 145.2L163.6 144.9L162.9 141.2L164.0 140.3L163.2 138.7L163.9 135.4L166.2 134.6L169.0 122.5L170.7 122.1L171.3 118.6L172.9 118.9L172.9 108.4L177.3 95.2L182.0 96.5L182.3 94.6L192.4 95.5L193.5 94.0L212.3 94.1Z"><title>Santiago del Estero</title></path></a>
+  <a href="#prov-ar-x" aria-label="Córdoba"><path id="ar-x" data-name="Córdoba" d="M184.5 190.9L186.6 189.8L187.8 191.8L192.6 191.7L192.8 194.0L205.2 195.9L204.6 196.6L205.5 198.9L210.0 201.4L209.3 206.2L210.7 208.2L217.3 208.3L218.1 211.6L223.6 218.0L218.2 239.0L216.0 241.3L217.4 248.3L216.8 251.4L219.9 255.0L222.2 260.6L222.7 263.5L221.6 265.1L224.5 267.4L224.6 273.1L222.1 275.8L203.7 306.7L194.2 306.7L194.2 321.7L161.3 322.0L160.6 277.7L163.4 273.0L165.6 261.5L164.5 255.9L159.3 256.5L158.7 250.8L151.4 246.1L148.7 245.9L148.7 225.3L153.4 211.9L155.3 202.8L160.4 201.1L164.6 196.2L164.1 190.1L177.2 187.7L182.8 189.0L184.2 190.8Z"><title>Córdoba</title></path></a>
+  <a href="#prov-ar-l" aria-label="La Pampa"><path id="ar-l" data-name="La Pampa" d="M194.2 321.9L194.2 427.0L187.3 423.6L186.4 421.6L183.7 421.3L182.2 419.0L174.9 415.9L161.2 414.1L156.2 415.5L152.2 413.5L150.2 415.0L142.7 412.3L138.3 413.2L134.0 412.2L132.7 411.2L133.3 409.8L132.2 407.8L122.3 403.3L121.7 399.9L115.2 400.9L112.7 399.6L110.9 396.0L109.0 396.3L108.0 394.4L111.3 391.0L110.3 386.2L101.3 384.2L101.4 350.2L100.5 349.1L100.5 345.9L161.3 345.9L161.3 322.0L194.2 321.8Z"><title>La Pampa</title></path></a>
+  <a href="#prov-ar-h" aria-label="Chaco"><path id="ar-h" data-name="Chaco" d="M214.4 56.8L217.1 57.6L217.9 59.2L221.6 59.7L222.3 61.3L222.8 60.3L224.4 62.0L225.1 61.3L231.0 68.8L235.3 69.3L236.9 73.4L240.8 78.3L246.3 81.1L246.7 82.5L248.6 82.4L250.6 85.9L252.0 86.0L252.6 88.5L254.4 90.0L255.4 94.3L259.1 95.8L265.0 102.6L265.2 106.0L269.4 106.2L271.0 110.8L275.1 109.8L278.1 111.8L286.0 119.3L287.8 122.7L289.3 122.8L289.6 124.2L287.3 125.1L287.3 128.2L286.3 127.7L286.2 129.6L284.4 130.1L284.3 131.4L285.6 132.5L285.1 134.6L282.0 136.2L280.1 139.0L281.4 145.9L280.4 152.6L280.0 151.2L226.1 151.2L226.1 94.1L193.5 94.0L214.1 63.4L214.5 56.7Z"><title>Chaco</title></path></a>
+  <a href="#prov-ar-p" aria-label="Formosa"><path id="ar-p" data-name="Formosa" d="M214.6 17.0L216.1 18.4L216.0 20.5L217.0 20.3L216.8 22.6L220.6 27.8L220.6 29.8L226.9 36.4L228.7 36.9L230.2 39.8L237.3 43.7L239.9 49.3L253.1 54.9L258.0 54.1L268.8 62.0L271.1 65.6L275.4 68.9L284.0 74.1L287.8 74.8L290.5 78.2L292.6 76.4L301.6 82.5L302.5 86.0L305.3 89.2L305.0 91.7L304.2 93.2L303.1 92.7L303.0 94.3L301.8 94.1L301.2 96.6L300.2 96.5L300.8 98.3L298.9 101.6L299.6 102.7L293.8 106.9L294.9 108.1L292.6 112.3L293.2 118.3L291.9 118.2L292.1 120.9L289.7 124.0L278.1 111.8L275.1 109.8L271.0 110.8L269.4 106.2L265.2 106.0L265.0 102.6L259.1 95.8L255.4 94.3L254.4 90.0L252.6 88.5L252.0 86.0L250.6 85.9L248.6 82.4L246.7 82.5L246.3 81.1L240.8 78.3L236.9 73.4L235.3 69.3L231.0 68.8L225.1 61.3L224.4 62.0L222.8 60.3L222.3 61.3L221.6 59.7L217.9 59.2L217.1 57.6L214.1 56.5L214.6 17.0Z"><title>Formosa</title></path></a>
+  <a href="#prov-ar-u" aria-label="Chubut"><path id="ar-u" data-name="Chubut" d="M110.9 492.0L162.1 492.0L165.7 496.4L173.6 497.8L170.6 502.1L174.1 502.7L180.1 502.5L181.6 500.6L180.7 498.2L175.2 497.8L186.8 493.8L190.0 499.7L190.4 506.8L188.6 511.3L180.3 513.4L177.6 510.6L178.4 507.2L175.9 505.0L170.4 504.1L163.8 507.8L163.1 511.0L170.4 514.4L176.1 514.8L176.6 515.9L163.8 522.6L162.4 526.2L157.0 532.4L157.7 539.1L159.0 540.0L158.6 541.4L159.8 541.6L157.4 545.7L159.2 549.6L157.0 551.8L158.0 553.3L156.4 553.2L156.4 555.0L154.6 554.7L151.2 556.9L149.5 560.5L149.9 562.0L153.5 563.3L150.2 566.6L140.6 564.6L139.0 566.6L137.5 566.0L134.4 567.4L134.1 568.5L135.3 569.1L132.9 568.4L134.4 570.5L125.9 571.7L118.7 580.2L118.2 584.2L116.6 585.0L113.9 589.4L36.6 589.4L37.3 588.5L36.5 586.7L34.3 585.6L33.8 581.2L35.1 579.1L34.4 578.7L40.0 577.1L38.9 574.6L42.5 572.9L42.6 570.9L38.9 567.6L38.3 564.5L33.4 563.1L32.2 564.1L28.6 562.0L29.4 560.3L28.7 559.1L31.3 560.3L39.9 558.6L44.0 560.3L45.1 558.7L44.5 556.3L47.1 555.0L47.2 553.7L45.7 551.4L41.6 550.1L33.4 550.8L32.9 549.2L33.9 548.7L33.1 547.2L34.1 546.0L32.8 543.5L34.5 543.1L36.6 539.4L34.4 536.8L34.6 535.5L37.9 532.2L35.5 531.6L34.1 529.5L32.2 529.8L32.8 528.1L31.1 527.3L31.7 524.2L34.9 524.0L35.0 521.2L31.2 518.8L27.2 513.9L27.4 509.8L26.5 508.8L29.6 504.1L29.3 501.9L27.4 501.4L26.6 495.4L28.9 494.8L31.3 496.6L34.1 495.6L35.1 494.7L34.2 492.0L106.2 492.0Z"><title>Chubut</title></path></a>
+  <a href="#prov-ar-r" aria-label="Río Negro"><path id="ar-r" data-name="Río Negro" d="M101.6 384.6L110.3 386.2L111.5 390.0L108.0 394.2L109.0 396.2L110.9 396.0L112.7 399.6L114.8 400.9L121.7 399.9L122.3 403.3L132.2 407.8L133.3 409.8L132.7 411.2L134.0 412.2L138.3 413.2L142.7 412.3L150.2 415.0L152.2 413.5L156.2 415.5L161.2 414.1L174.9 415.9L182.2 419.0L183.7 421.3L186.5 421.6L187.3 423.6L191.8 426.6L194.2 427.0L194.3 460.6L197.9 460.8L202.4 463.3L205.5 468.3L199.3 471.5L186.5 471.5L172.1 464.4L165.8 463.5L165.2 462.9L166.3 462.4L168.3 463.1L167.2 462.3L167.7 461.3L163.5 460.8L165.3 461.9L161.6 463.2L160.2 467.0L160.7 473.3L163.6 480.3L162.7 482.2L163.4 486.3L162.1 492.0L34.2 492.0L33.7 488.2L34.6 486.8L32.1 482.4L33.4 481.7L33.0 478.2L31.5 476.0L31.8 473.9L33.0 474.3L32.0 471.7L33.3 469.2L32.5 468.4L38.4 468.2L43.1 470.1L46.2 469.0L48.3 466.0L46.6 461.8L49.4 459.1L55.5 457.7L57.7 455.6L59.9 456.4L64.8 455.1L64.7 453.7L66.8 452.5L66.9 449.4L69.0 447.7L67.9 444.5L69.3 442.0L77.4 438.8L81.8 433.5L87.1 431.5L95.4 420.9L100.4 418.4L106.2 418.9L103.9 412.8L101.3 411.2L101.6 384.5Z"><title>Río Negro</title></path></a>
+  <a href="#prov-ar-n" aria-label="Misiones"><path id="ar-n" data-name="Misiones" d="M366.8 137.7L365.3 136.8L363.0 139.2L362.1 137.9L361.3 140.1L360.2 139.3L360.1 140.9L358.4 141.1L357.7 139.8L355.3 145.7L352.5 146.0L353.5 147.7L352.0 147.5L351.5 148.7L350.3 147.7L347.9 149.4L346.9 152.1L343.5 155.2L339.6 152.7L338.4 150.0L338.3 146.1L334.0 137.9L334.3 135.3L337.0 135.2L340.1 137.7L342.8 135.0L342.3 131.4L343.4 129.3L345.4 129.5L346.9 126.1L351.4 125.7L351.4 123.6L354.9 121.6L355.2 119.1L357.7 118.8L357.9 115.6L359.7 113.5L360.8 110.1L360.2 108.9L361.4 107.8L360.3 106.3L360.2 102.6L361.6 101.8L362.0 98.4L360.6 94.7L362.0 94.4L361.8 92.6L365.0 95.1L365.8 92.7L367.7 91.7L369.7 92.4L369.2 91.3L371.2 90.2L371.2 93.2L371.7 91.8L374.0 93.9L375.3 93.4L376.6 97.5L376.3 101.9L380.0 107.7L377.7 118.1L378.5 118.4L378.0 121.1L379.6 123.4L378.9 123.5L379.4 125.5L377.2 127.5L377.7 128.5L376.9 127.9L377.0 130.4L374.1 130.6L371.5 134.2L369.9 133.1L369.1 136.2L366.7 137.6Z"><title>Misiones</title></path></a>
+  <a href="#prov-ar-a" aria-label="Salta"><path id="ar-a" data-name="Salta" d="M205.1 5.9L205.5 9.2L208.5 11.0L208.4 12.6L214.1 16.3L214.1 63.4L192.4 95.5L182.3 94.6L182.0 96.5L177.3 95.2L173.0 107.9L167.4 108.0L164.3 110.0L162.6 109.6L162.6 108.1L158.1 106.7L157.7 104.5L156.5 104.0L155.3 105.2L150.2 105.4L149.7 111.1L142.9 108.3L140.6 105.7L137.0 112.7L134.0 111.1L133.2 106.4L128.2 101.8L128.1 95.6L131.9 95.5L133.5 93.3L134.4 88.9L134.1 87.3L132.9 87.0L133.7 85.5L127.5 84.1L108.7 84.0L96.5 82.3L99.6 80.9L95.4 72.4L96.7 68.5L97.9 68.6L98.8 65.6L100.3 65.8L101.2 63.7L119.1 54.7L121.2 46.4L126.4 53.5L127.5 53.2L128.3 55.6L135.1 59.0L137.4 56.0L137.3 46.4L141.0 39.6L144.5 41.9L144.0 51.9L145.3 54.0L149.1 55.4L150.9 63.1L157.1 66.0L159.7 65.0L161.9 67.5L164.8 68.4L166.3 65.2L169.8 68.6L171.8 67.9L174.4 63.6L176.9 63.8L179.4 59.2L179.5 42.1L175.7 42.1L173.9 45.1L172.3 42.2L169.4 40.5L166.0 41.3L165.1 37.1L162.0 34.9L162.1 30.7L158.6 27.8L157.5 22.9L158.2 20.9L156.7 19.8L159.8 7.2L163.5 7.2L170.7 10.2L172.2 12.1L171.6 14.2L172.4 15.9L174.6 18.3L174.0 20.7L175.9 23.2L176.4 26.7L177.8 18.7L180.2 15.0L183.8 5.1L188.0 5.1L188.5 6.5L188.8 5.1L205.1 5.9Z"><title>Salta</title></path></a>
+  <a href="#prov-ar-b" aria-label="Buenos Aires"><path id="ar-b" data-name="Buenos Aires" d="M254.1 279.6L257.9 283.8L262.0 285.7L262.5 287.4L265.3 288.1L266.0 289.8L267.9 288.3L269.2 290.6L273.1 290.6L273.2 292.6L277.9 293.4L284.4 298.1L288.0 297.3L290.3 298.2L290.1 302.3L286.6 304.5L288.2 306.7L287.1 308.0L288.1 310.1L286.8 313.2L288.1 314.4L290.3 312.6L293.5 315.4L299.3 317.4L306.2 322.2L311.7 328.3L313.5 332.5L309.0 339.7L308.7 345.2L313.7 352.8L316.5 354.1L320.9 353.6L322.3 367.5L313.6 382.3L306.6 390.5L305.6 397.1L299.7 401.9L290.6 406.4L275.7 411.7L242.5 418.5L224.2 418.8L219.2 417.2L217.4 414.4L213.0 414.0L214.4 415.0L214.0 417.8L214.9 418.8L214.1 423.0L216.1 425.1L214.5 425.5L220.4 427.9L219.0 428.5L217.1 426.3L215.1 426.3L216.7 427.4L216.6 428.8L217.7 428.2L219.7 429.9L218.3 435.1L218.4 439.7L214.5 440.1L214.1 447.9L211.3 450.7L212.6 454.6L215.2 457.2L214.5 456.1L217.1 457.4L217.3 458.9L214.7 464.5L207.0 468.6L205.5 468.3L200.6 462.2L194.3 460.6L194.2 306.7L225.9 306.7L242.0 286.4L249.9 288.4L250.9 284.3L254.0 279.5ZM220.6 421.2L220.6 422.2L220.8 421.2L222.3 421.5L221.6 422.6L222.3 422.9L222.8 421.3L223.0 424.9L219.5 422.8L220.6 421.2Z"><title>Buenos Aires</title></path></a>
+  <a href="#prov-ar-v" aria-label="Tierra del Fuego"><path id="ar-v" data-name="Tierra del Fuego" d="M95.3 752.7L100.7 758.6L102.3 763.2L101.1 760.2L99.3 760.2L95.9 763.3L95.7 765.8L103.5 767.9L106.3 774.0L112.2 779.2L110.4 780.1L112.4 778.9L114.8 780.2L114.2 780.9L115.0 782.4L122.1 787.0L130.3 790.5L135.4 795.8L148.1 800.0L153.5 800.6L158.9 799.2L158.5 800.3L161.1 800.2L156.1 807.0L154.4 805.8L149.7 807.8L149.3 806.3L144.6 806.1L144.9 807.7L137.9 808.4L135.7 809.9L119.9 805.3L111.8 805.7L101.4 803.5L100.2 803.9L101.2 804.6L95.3 804.7L96.6 805.2L94.5 805.9L94.6 751.5L95.3 752.6ZM278.4 716.8L282.9 719.6L286.0 719.9L284.7 718.7L286.8 718.2L290.4 719.7L290.2 722.3L288.2 722.2L287.3 720.4L284.9 722.5L287.0 721.5L286.2 722.8L286.8 723.6L288.8 722.5L288.1 724.4L291.6 724.6L291.6 727.2L292.1 726.2L293.6 726.8L292.1 725.3L294.1 726.0L291.9 724.6L293.0 723.9L289.7 723.6L291.5 720.6L297.9 719.9L301.9 723.6L298.8 723.2L301.4 724.3L295.7 723.1L296.5 724.1L293.7 724.4L302.1 726.7L297.7 727.0L300.1 727.7L298.4 727.8L302.3 727.7L295.6 729.9L291.2 729.3L294.8 730.3L289.5 731.2L293.7 731.0L289.2 733.6L286.1 731.3L287.1 732.7L286.0 733.2L281.9 732.9L279.1 731.6L278.9 730.3L278.1 732.0L275.6 731.5L275.2 732.6L278.3 731.9L282.4 733.9L279.4 733.0L282.2 735.1L283.5 734.3L285.7 735.8L283.8 736.0L284.7 736.7L284.3 738.9L281.2 736.0L279.8 736.3L280.5 737.5L279.2 738.3L277.5 735.9L272.5 735.2L272.2 736.2L274.2 736.1L273.7 737.4L275.3 736.4L275.9 737.4L274.4 737.9L276.5 738.0L274.8 739.4L277.3 739.0L275.8 740.3L277.4 740.4L276.8 741.3L277.6 741.7L273.5 741.0L270.8 738.1L270.0 738.3L270.5 739.3L269.1 738.5L268.4 739.5L270.2 739.8L268.9 740.2L270.0 740.5L269.5 741.4L271.5 740.6L269.9 742.4L271.2 742.0L270.5 743.2L272.1 743.5L270.9 744.2L268.3 743.0L268.1 741.4L266.7 741.8L267.3 740.4L265.8 740.5L263.9 737.8L266.2 738.4L265.6 737.5L267.3 737.1L265.3 735.6L267.4 735.6L265.4 734.6L267.9 734.5L266.2 733.4L268.8 733.7L267.5 732.6L269.4 732.8L268.3 731.5L270.0 730.9L270.6 732.0L273.4 728.7L273.5 729.7L276.7 727.9L277.3 731.3L278.8 729.9L277.0 728.3L277.9 727.8L276.9 727.0L278.2 727.4L274.4 725.3L275.4 723.2L277.5 725.9L276.9 723.4L280.8 723.7L275.0 722.3L276.0 721.1L278.5 721.9L277.7 720.5L280.3 720.3L278.4 716.8ZM270.4 719.3L274.2 720.8L272.2 722.4L274.0 721.8L271.4 723.9L270.8 722.9L268.3 723.8L271.1 723.5L270.1 724.2L271.3 724.0L270.4 725.8L266.5 727.2L261.4 734.6L258.6 735.6L257.2 733.9L256.8 735.6L254.2 735.9L255.7 734.6L253.2 735.8L252.4 734.9L251.9 735.6L253.3 735.9L253.3 737.4L254.1 735.9L253.6 737.7L252.0 739.4L251.4 738.3L252.5 737.9L249.1 738.2L251.5 739.8L247.6 738.5L249.4 739.8L246.9 741.8L245.5 740.6L246.7 739.7L244.5 739.0L246.1 738.9L245.1 738.0L242.5 738.1L245.0 739.7L243.6 740.1L239.2 736.5L238.7 737.2L238.4 735.6L241.6 736.3L241.2 737.5L243.4 736.9L241.6 736.2L244.5 735.9L242.6 734.3L245.3 734.6L245.0 735.7L245.6 734.7L245.7 736.6L246.5 736.4L246.1 734.7L247.7 735.1L247.1 736.1L248.1 736.1L247.8 735.2L249.1 736.0L247.9 735.1L251.2 733.6L246.4 733.6L249.2 733.8L250.2 730.0L251.6 729.7L250.8 732.2L251.9 731.9L251.7 732.8L252.4 731.0L253.5 731.3L252.6 729.6L254.7 730.4L255.3 728.3L252.7 728.1L251.4 728.6L251.9 729.5L247.9 730.6L246.3 727.3L248.8 728.4L254.3 727.1L259.2 729.2L252.9 725.7L253.8 724.7L252.7 725.2L252.5 723.9L252.4 725.2L249.3 724.2L249.0 723.3L251.4 722.9L246.3 721.2L246.1 719.9L247.1 719.9L246.1 719.4L256.2 723.4L259.3 722.7L256.8 721.8L258.6 720.4L258.7 721.4L260.8 720.4L260.7 721.4L263.9 721.3L262.2 722.2L265.9 722.5L268.4 720.7L266.2 721.9L267.9 722.8L267.4 721.9L270.5 721.8L268.7 721.0L270.4 719.3ZM176.1 802.0L179.8 802.9L179.6 801.9L181.5 801.9L181.6 803.1L186.3 801.8L183.3 803.9L183.3 802.8L181.3 803.1L178.2 805.0L178.0 803.2L176.6 803.3L173.9 805.4L173.1 805.3L173.6 804.2L169.1 806.4L170.2 805.8L169.8 804.8L168.0 804.5L169.2 803.2L172.7 803.6L172.1 801.8L174.6 803.2L175.0 802.4L175.4 803.9L176.1 801.9ZM241.6 729.7L242.4 730.3L242.1 732.8L241.3 732.9L242.1 733.4L239.9 735.1L237.0 733.1L237.9 731.8L236.5 731.3L238.9 731.7L238.9 730.2L240.1 730.1L240.9 730.9L238.7 732.8L241.5 731.9L241.6 729.7ZM252.7 717.6L257.9 719.2L256.7 720.9L253.8 721.2L252.7 720.6L254.3 719.3L255.4 720.8L256.4 719.9L252.7 717.6ZM263.2 717.1L266.3 717.5L266.6 718.7L268.4 717.8L269.7 719.3L268.7 718.5L269.0 719.6L266.6 719.5L262.1 717.8L263.2 717.1ZM287.6 735.2L289.2 735.6L287.9 736.1L288.8 736.1L289.0 737.8L286.3 736.1L287.6 735.2ZM263.0 739.1L265.0 740.9L263.6 742.7L263.0 739.1ZM235.2 730.5L235.9 731.1L234.8 731.4L235.8 731.8L235.2 732.4L233.0 731.4L235.2 730.5ZM259.6 718.0L260.6 718.7L259.7 718.8L260.1 719.8L257.9 718.5L259.6 718.0Z"><title>Tierra del Fuego</title></path></a>
+  <a href="#prov-ar-e" aria-label="Entre Ríos"><path id="ar-e" data-name="Entre Ríos" d="M285.7 203.8L292.9 206.9L294.2 209.8L295.5 210.3L296.2 214.5L300.7 219.0L300.2 222.1L298.5 222.3L299.5 225.3L297.3 233.7L295.3 235.4L297.2 238.4L296.1 242.7L292.9 245.5L294.2 248.6L293.4 252.5L295.0 254.9L293.0 259.8L295.3 272.9L289.2 277.3L288.6 285.1L287.4 287.2L288.8 295.2L290.3 298.2L288.0 297.3L284.8 298.2L277.9 293.4L273.2 292.6L273.0 290.5L269.5 290.7L267.9 288.3L266.0 289.8L265.2 288.0L262.8 287.6L261.9 285.6L257.7 283.6L253.1 278.8L253.0 277.4L249.3 276.1L245.8 270.5L243.9 260.9L245.8 256.4L246.2 249.8L244.9 248.0L246.3 246.1L245.8 244.0L246.8 242.1L249.8 241.2L252.4 239.1L252.4 237.6L256.0 235.0L256.7 231.3L258.5 230.4L259.4 227.2L263.8 221.2L265.7 217.2L264.9 215.7L265.4 212.3L264.0 209.9L265.0 208.1L266.6 210.5L267.2 208.0L273.4 208.8L276.6 205.5L280.1 205.9L285.7 203.8Z"><title>Entre Ríos</title></path></a>
+  <a href="#prov-ar-w" aria-label="Corrientes"><path id="ar-w" data-name="Corrientes" d="M297.4 133.6L302.7 134.8L306.3 137.7L309.7 136.9L311.6 138.3L316.3 138.9L318.9 141.6L321.9 140.9L321.3 138.2L323.5 137.4L325.7 140.6L327.9 141.5L329.5 136.9L334.2 134.4L334.0 137.9L338.3 146.1L338.4 150.0L339.6 152.7L342.3 154.6L339.2 157.4L341.3 159.3L340.9 161.4L337.3 160.0L337.3 162.8L334.9 163.5L334.9 165.9L331.5 170.0L329.4 170.6L329.3 173.2L327.2 175.0L327.0 177.5L323.7 178.6L321.6 184.4L316.5 191.2L310.4 195.7L309.5 199.7L306.9 202.8L303.6 204.3L303.7 208.2L299.0 212.3L300.5 217.7L296.2 214.5L295.5 210.3L294.2 209.8L292.9 206.9L285.9 203.8L280.1 205.9L276.6 205.5L273.4 208.8L267.2 208.0L266.5 210.5L264.2 206.6L265.7 205.7L267.0 200.1L265.2 196.1L266.5 189.4L266.3 185.2L267.9 183.9L268.3 181.5L270.0 181.0L271.2 178.3L274.0 176.3L276.9 163.2L275.7 156.6L276.6 154.3L278.8 154.5L281.1 150.3L281.3 143.5L280.0 141.7L280.1 139.0L282.0 136.2L287.4 133.5L297.4 133.6ZM317.6 137.2L321.2 139.2L319.0 141.4L315.3 138.6L317.6 137.2ZM305.1 136.3L308.2 137.0L306.6 137.6L305.1 136.2Z"><title>Corrientes</title></path></a>
+  <a href="#prov-ar-m" aria-label="Mendoza"><path id="ar-m" data-name="Mendoza" d="M84.7 248.7L86.8 251.4L88.7 251.4L88.7 256.8L93.5 256.8L97.4 254.4L97.4 252.0L105.2 250.3L107.0 250.8L109.0 254.0L115.3 254.0L116.2 256.1L118.9 257.1L119.6 261.6L122.1 267.1L120.8 270.1L122.6 284.2L127.6 293.2L131.6 296.2L130.6 302.4L129.3 302.9L128.8 305.7L129.7 306.5L129.9 311.1L133.6 317.5L135.2 325.0L132.1 346.0L100.5 345.9L100.5 350.2L101.4 350.2L101.2 384.3L97.8 383.6L96.5 381.4L92.9 381.1L91.6 379.2L89.7 380.1L86.6 379.2L85.9 375.7L82.0 373.8L77.0 374.6L72.7 372.0L72.6 367.2L69.5 365.3L65.7 359.9L63.7 353.9L61.2 353.5L59.9 348.3L61.0 346.9L60.0 345.3L61.1 344.1L60.0 343.0L62.1 341.4L60.8 340.8L59.9 337.2L60.7 336.3L60.1 334.5L61.0 334.3L59.5 332.9L59.8 329.4L56.9 328.2L57.8 326.5L60.9 325.8L61.1 321.8L63.3 316.7L62.2 315.5L63.9 313.9L65.6 309.1L67.8 307.3L67.4 304.3L68.5 303.4L69.7 304.4L71.9 302.4L70.4 300.5L71.4 297.6L69.8 296.4L70.8 294.6L69.8 291.7L70.5 286.1L72.4 281.3L69.6 278.9L68.0 280.8L67.3 279.5L66.2 274.2L67.6 273.1L68.2 270.5L66.0 268.1L64.9 263.2L66.8 263.8L68.0 261.5L72.2 261.8L73.6 260.7L73.2 256.6L75.1 255.0L75.7 252.0L84.7 248.7Z"><title>Mendoza</title></path></a>
+  <a href="#prov-ar-j" aria-label="San Juan"><path id="ar-j" data-name="San Juan" d="M75.4 161.3L79.7 162.2L81.1 161.2L84.0 169.7L88.8 172.1L87.9 174.3L88.8 178.7L87.1 180.1L87.9 183.3L86.4 188.5L86.8 191.4L89.3 190.0L89.7 191.0L97.7 191.4L102.4 194.6L103.1 197.1L105.1 197.5L114.0 207.2L115.8 213.0L123.7 222.2L123.3 233.6L126.1 239.7L127.7 239.7L129.0 244.0L131.7 246.7L122.6 244.5L118.0 245.4L118.0 254.0L119.9 255.7L120.2 257.9L116.2 256.1L115.3 254.0L109.0 254.0L107.0 250.8L105.2 250.3L97.4 252.0L97.4 254.4L93.5 256.8L88.7 256.8L88.7 251.4L86.8 251.4L84.9 248.6L83.6 248.6L81.1 250.8L79.2 250.2L75.7 252.0L75.1 255.0L73.2 256.6L73.6 260.7L70.9 262.5L68.0 261.5L66.3 263.7L65.2 259.9L63.5 259.0L63.8 256.5L61.9 255.1L62.2 251.9L60.6 249.7L62.5 249.9L64.0 247.6L62.7 245.8L59.2 244.8L57.2 235.8L58.5 227.2L59.3 226.3L60.4 228.3L61.9 225.3L62.9 225.3L61.9 222.5L64.3 211.9L65.8 210.4L65.1 208.3L68.9 209.3L70.1 208.4L70.2 205.2L71.5 204.5L71.5 203.0L68.7 202.0L70.0 198.9L70.3 193.2L67.6 183.6L69.2 181.6L68.9 180.2L72.1 178.8L72.5 173.1L73.9 170.0L73.2 167.7L74.7 164.3L74.1 162.7L74.7 160.9L75.4 161.2Z"><title>San Juan</title></path></a>
+  <a href="#prov-ar-q" aria-label="Neuquén"><path id="ar-q" data-name="Neuquén" d="M60.5 349.8L61.5 354.1L63.7 353.9L65.7 359.9L69.5 365.3L72.6 367.2L72.3 370.1L73.5 372.8L77.0 374.6L82.0 373.8L85.9 375.7L86.6 379.2L89.7 380.1L91.6 379.2L92.9 381.1L96.5 381.4L97.8 383.6L101.3 384.2L101.3 411.2L103.9 412.8L106.2 418.9L100.4 418.4L95.4 420.9L87.1 431.5L81.8 433.5L77.4 438.8L69.3 442.0L67.9 444.5L69.0 447.7L66.9 449.4L66.8 452.5L64.7 453.7L64.8 455.1L59.9 456.4L57.7 455.6L55.5 457.7L49.4 459.1L46.6 461.8L48.3 466.0L46.2 469.0L43.1 470.1L38.4 468.2L32.5 468.4L31.7 467.3L32.6 464.8L30.6 460.9L32.9 458.6L33.2 457.4L32.0 456.9L33.2 453.6L35.4 453.7L36.4 452.0L33.2 449.0L33.2 445.5L36.1 445.9L35.8 444.1L37.6 441.2L35.9 439.8L35.4 436.6L36.2 435.6L35.2 434.5L36.1 432.7L39.4 434.5L40.0 432.6L38.8 431.8L41.8 425.9L40.7 417.3L47.1 413.0L50.4 413.2L52.2 409.2L49.3 405.1L48.3 400.7L49.0 398.8L48.1 397.6L49.2 396.8L46.8 393.5L47.1 392.3L45.5 391.2L46.5 390.3L45.0 386.1L46.5 384.6L46.7 381.7L44.7 377.0L46.7 375.4L47.2 373.1L44.7 369.8L47.3 368.7L46.2 368.6L46.7 367.1L45.5 366.4L46.8 362.5L48.8 362.8L47.9 361.0L48.3 357.5L49.8 358.2L51.2 355.6L54.4 356.4L54.6 352.6L57.0 349.3L59.5 350.2L60.1 348.6L60.5 349.7Z"><title>Neuquén</title></path></a>
+  <a href="#prov-ar-f" aria-label="La Rioja"><path id="ar-f" data-name="La Rioja" d="M96.2 146.8L97.8 148.1L97.7 151.8L100.7 151.9L100.9 153.5L103.5 153.7L104.1 155.4L107.8 154.0L109.1 160.3L112.0 158.8L122.3 160.6L124.9 157.4L133.4 158.2L134.8 166.4L137.6 168.8L136.7 172.2L142.4 174.2L147.8 179.9L147.8 182.1L149.1 182.1L155.3 202.8L153.4 211.9L148.7 225.3L148.7 245.9L144.7 245.9L142.8 247.9L138.6 246.9L137.6 248.6L130.3 245.5L127.7 239.7L126.1 239.7L123.3 233.6L123.7 222.2L115.8 213.0L114.0 207.2L105.1 197.5L103.1 197.1L102.4 194.6L97.7 191.4L89.7 191.0L89.3 190.0L86.8 191.4L86.4 188.5L87.9 183.3L87.1 180.1L88.8 178.7L87.9 174.3L88.8 172.1L84.0 169.7L81.1 161.2L78.9 162.2L75.0 160.6L77.1 159.2L78.4 155.7L79.6 156.7L82.6 150.4L83.8 150.5L84.7 148.8L85.3 146.3L90.9 145.3L95.0 146.8L95.8 144.1L96.2 146.7Z"><title>La Rioja</title></path></a>
+  <a href="#prov-ar-k" aria-label="Catamarca"><path id="ar-k" data-name="Catamarca" d="M95.0 146.8L90.9 145.3L85.3 146.1L86.1 142.0L88.2 139.5L87.5 137.4L88.3 137.7L89.6 134.6L90.7 134.2L89.6 133.3L90.1 130.8L91.3 129.3L93.4 129.3L95.2 131.2L95.5 129.7L97.0 130.0L96.9 128.3L97.6 129.2L100.6 127.8L100.1 126.4L101.1 124.9L95.0 114.5L95.5 109.5L98.9 106.9L97.1 95.3L94.9 89.1L96.2 87.4L96.5 82.3L108.7 84.0L127.5 84.1L133.7 85.5L132.9 87.0L134.1 87.3L134.4 88.9L133.5 93.3L131.9 95.5L128.1 95.6L128.2 101.8L133.2 106.4L134.0 111.1L137.0 112.7L140.2 105.9L142.4 107.8L141.0 117.9L143.5 117.1L147.5 120.7L146.2 123.6L147.0 125.2L141.6 133.3L144.8 135.0L144.9 139.6L147.5 147.6L149.0 145.6L150.7 150.6L152.4 151.6L156.3 147.5L160.1 149.9L161.5 162.7L161.0 166.1L159.8 166.4L161.0 168.7L165.3 171.7L166.2 180.4L167.5 182.0L166.4 183.3L167.5 185.4L166.7 189.5L164.1 190.1L164.6 196.2L160.4 201.1L155.3 202.8L149.1 182.1L147.8 182.1L147.8 179.9L142.4 174.2L136.7 172.2L137.6 168.8L134.8 166.4L133.4 158.2L124.9 157.4L122.3 160.6L112.0 158.8L109.1 160.3L107.8 154.0L104.1 155.4L103.5 153.7L100.9 153.5L100.7 151.9L97.5 151.6L97.8 148.1L96.4 147.4L95.8 144.1L95.0 146.8Z"><title>Catamarca</title></path></a>
+  <a href="#prov-ar-z" aria-label="Santa Cruz"><path id="ar-z" data-name="Santa Cruz" d="M16.5 659.9L19.8 657.4L18.7 649.9L21.5 650.6L23.2 647.6L22.6 646.6L25.6 645.9L23.8 643.8L24.2 641.9L23.0 639.9L21.4 639.6L21.8 637.3L19.8 636.5L20.9 633.5L19.9 631.8L21.4 631.9L21.8 629.8L24.0 628.1L24.3 626.2L23.4 624.8L29.9 621.0L29.5 618.6L32.5 619.3L32.5 616.9L30.7 615.6L32.1 614.0L30.7 613.1L30.7 609.2L36.7 606.0L34.5 597.8L35.1 596.0L31.5 592.8L35.3 591.6L36.6 589.4L113.9 589.4L113.5 595.0L116.8 602.7L122.9 606.6L129.2 613.7L146.8 616.0L149.3 618.6L149.7 621.8L147.4 631.9L144.2 631.5L138.9 634.9L146.6 632.3L147.0 635.0L148.8 636.8L145.8 636.6L144.7 639.3L146.3 640.6L142.0 641.1L137.9 644.8L137.8 647.1L135.8 646.7L134.9 648.2L129.9 649.6L127.6 652.5L122.8 654.8L121.0 658.5L114.7 662.8L113.1 665.8L113.5 666.9L111.1 669.1L111.6 670.2L110.0 670.4L110.5 671.7L109.3 671.8L111.9 671.6L112.5 668.6L113.7 669.6L111.3 681.3L109.0 685.8L103.5 689.3L99.7 689.7L94.0 681.3L95.3 685.2L88.4 686.8L95.1 685.9L96.8 688.9L99.4 690.4L89.4 694.9L85.6 700.5L84.4 704.5L84.6 708.7L78.2 713.8L83.9 710.6L87.9 725.0L84.5 725.8L80.5 724.5L75.3 726.4L80.7 725.4L84.9 727.0L87.8 726.3L92.7 735.0L99.4 743.3L97.9 745.1L98.2 743.5L90.2 742.2L83.5 739.1L77.8 739.1L68.1 735.5L29.3 734.7L31.2 733.5L30.8 732.3L27.6 729.2L24.2 728.1L23.6 725.4L21.4 725.3L23.7 722.7L24.0 720.0L22.8 719.3L24.9 717.3L22.1 713.7L22.7 711.7L24.8 712.0L25.1 708.1L23.2 704.8L24.4 702.8L20.5 701.4L18.5 703.4L16.0 701.7L9.5 706.0L5.7 706.8L5.4 704.8L7.5 703.2L5.6 702.6L3.9 698.6L2.6 698.5L3.1 697.7L1.6 694.7L0.0 693.3L1.6 688.1L0.0 687.3L1.2 685.9L0.3 684.9L2.4 680.9L1.1 679.6L2.0 677.5L0.3 675.5L2.7 672.0L3.0 670.2L1.3 668.9L1.8 667.4L9.9 669.1L8.3 668.9L8.0 667.0L11.0 662.2L12.3 660.8L14.7 661.6L16.5 659.9Z"><title>Santa Cruz</title></path></a>
+  <a href="#prov-ar-c" aria-label="Ciudad Autónoma de Buenos Aires"><circle id="ar-c" data-name="Ciudad Autónoma de Buenos Aires" cx="288.3" cy="312.1" r="3.2"><title>Ciudad Autónoma de Buenos Aires</title></circle></a>
+          </svg>
+        </div>
+
+        <div class="map-side">
+          <h2 class="map-side__title">Filtrar por región</h2>
+          <div class="filters" role="group" aria-label="Filtrar provincias por región">
+              <button type="button" class="chip" data-filter="all" aria-pressed="true">Todas <span>24</span></button>
+            <button type="button" class="chip" data-filter="Ciudad de Buenos Aires" aria-pressed="false">Ciudad de Buenos Aires <span>1</span></button>
+            <button type="button" class="chip" data-filter="Pampeana" aria-pressed="false">Pampeana <span>5</span></button>
+            <button type="button" class="chip" data-filter="NOA" aria-pressed="false">NOA <span>6</span></button>
+            <button type="button" class="chip" data-filter="NEA" aria-pressed="false">NEA <span>4</span></button>
+            <button type="button" class="chip" data-filter="Cuyo" aria-pressed="false">Cuyo <span>3</span></button>
+            <button type="button" class="chip" data-filter="Patagonia" aria-pressed="false">Patagonia <span>5</span></button>
+          </div>
+          <p class="map-count" id="prov-count" role="status" aria-live="polite">24 provincias</p>
+          <p class="map-note">
+            Población: Censo Nacional 2022 (INDEC). Superficie y límites: Instituto Geográfico
+            Nacional.
+          </p>
+        </div>
+      </section>
+
+      <section aria-label="Listado de provincias">
+        <div class="prov-grid" id="prov-grid">
+          <article class="prov" id="prov-ar-b" data-region="Pampeana">
+          <div class="prov__head">
+            <h2>Buenos Aires</h2>
+            <span class="prov__iso">AR-B</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>La Plata</dd></div>
+            <div><dt>Población</dt><dd>17.523.996</dd></div>
+            <div><dt>Superficie</dt><dd>305.907 km²</dd></div>
+          </dl>
+          <p class="prov__region">Pampeana</p>
+        </article>
+        <article class="prov" id="prov-ar-k" data-region="NOA">
+          <div class="prov__head">
+            <h2>Catamarca</h2>
+            <span class="prov__iso">AR-K</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>San Fernando del Valle de Catamarca</dd></div>
+            <div><dt>Población</dt><dd>429.562</dd></div>
+            <div><dt>Superficie</dt><dd>101.486 km²</dd></div>
+          </dl>
+          <p class="prov__region">NOA</p>
+        </article>
+        <article class="prov" id="prov-ar-h" data-region="NEA">
+          <div class="prov__head">
+            <h2>Chaco</h2>
+            <span class="prov__iso">AR-H</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Resistencia</dd></div>
+            <div><dt>Población</dt><dd>1.129.606</dd></div>
+            <div><dt>Superficie</dt><dd>99.763 km²</dd></div>
+          </dl>
+          <p class="prov__region">NEA</p>
+        </article>
+        <article class="prov" id="prov-ar-u" data-region="Patagonia">
+          <div class="prov__head">
+            <h2>Chubut</h2>
+            <span class="prov__iso">AR-U</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Rawson</dd></div>
+            <div><dt>Población</dt><dd>592.621</dd></div>
+            <div><dt>Superficie</dt><dd>224.302 km²</dd></div>
+          </dl>
+          <p class="prov__region">Patagonia</p>
+        </article>
+        <article class="prov" id="prov-ar-c" data-region="Ciudad de Buenos Aires">
+          <div class="prov__head">
+            <h2>Ciudad Autónoma de Buenos Aires</h2>
+            <span class="prov__iso">AR-C</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Ciudad Autónoma de Buenos Aires</dd></div>
+            <div><dt>Población</dt><dd>3.121.707</dd></div>
+            <div><dt>Superficie</dt><dd>206 km²</dd></div>
+          </dl>
+          <p class="prov__region">Ciudad de Buenos Aires</p>
+        </article>
+        <article class="prov" id="prov-ar-w" data-region="NEA">
+          <div class="prov__head">
+            <h2>Corrientes</h2>
+            <span class="prov__iso">AR-W</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Corrientes</dd></div>
+            <div><dt>Población</dt><dd>1.212.696</dd></div>
+            <div><dt>Superficie</dt><dd>89.123 km²</dd></div>
+          </dl>
+          <p class="prov__region">NEA</p>
+        </article>
+        <article class="prov" id="prov-ar-x" data-region="Pampeana">
+          <div class="prov__head">
+            <h2>Córdoba</h2>
+            <span class="prov__iso">AR-X</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Córdoba</dd></div>
+            <div><dt>Población</dt><dd>3.840.905</dd></div>
+            <div><dt>Superficie</dt><dd>164.708 km²</dd></div>
+          </dl>
+          <p class="prov__region">Pampeana</p>
+        </article>
+        <article class="prov" id="prov-ar-e" data-region="Pampeana">
+          <div class="prov__head">
+            <h2>Entre Ríos</h2>
+            <span class="prov__iso">AR-E</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Paraná</dd></div>
+            <div><dt>Población</dt><dd>1.425.578</dd></div>
+            <div><dt>Superficie</dt><dd>78.384 km²</dd></div>
+          </dl>
+          <p class="prov__region">Pampeana</p>
+        </article>
+        <article class="prov" id="prov-ar-p" data-region="NEA">
+          <div class="prov__head">
+            <h2>Formosa</h2>
+            <span class="prov__iso">AR-P</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Formosa</dd></div>
+            <div><dt>Población</dt><dd>607.419</dd></div>
+            <div><dt>Superficie</dt><dd>75.488 km²</dd></div>
+          </dl>
+          <p class="prov__region">NEA</p>
+        </article>
+        <article class="prov" id="prov-ar-y" data-region="NOA">
+          <div class="prov__head">
+            <h2>Jujuy</h2>
+            <span class="prov__iso">AR-Y</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>San Salvador de Jujuy</dd></div>
+            <div><dt>Población</dt><dd>811.611</dd></div>
+            <div><dt>Superficie</dt><dd>53.244 km²</dd></div>
+          </dl>
+          <p class="prov__region">NOA</p>
+        </article>
+        <article class="prov" id="prov-ar-l" data-region="Pampeana">
+          <div class="prov__head">
+            <h2>La Pampa</h2>
+            <span class="prov__iso">AR-L</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Santa Rosa</dd></div>
+            <div><dt>Población</dt><dd>361.859</dd></div>
+            <div><dt>Superficie</dt><dd>143.493 km²</dd></div>
+          </dl>
+          <p class="prov__region">Pampeana</p>
+        </article>
+        <article class="prov" id="prov-ar-f" data-region="NOA">
+          <div class="prov__head">
+            <h2>La Rioja</h2>
+            <span class="prov__iso">AR-F</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>La Rioja</dd></div>
+            <div><dt>Población</dt><dd>383.865</dd></div>
+            <div><dt>Superficie</dt><dd>91.494 km²</dd></div>
+          </dl>
+          <p class="prov__region">NOA</p>
+        </article>
+        <article class="prov" id="prov-ar-m" data-region="Cuyo">
+          <div class="prov__head">
+            <h2>Mendoza</h2>
+            <span class="prov__iso">AR-M</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Mendoza</dd></div>
+            <div><dt>Población</dt><dd>2.043.540</dd></div>
+            <div><dt>Superficie</dt><dd>149.069 km²</dd></div>
+          </dl>
+          <p class="prov__region">Cuyo</p>
+        </article>
+        <article class="prov" id="prov-ar-n" data-region="NEA">
+          <div class="prov__head">
+            <h2>Misiones</h2>
+            <span class="prov__iso">AR-N</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Posadas</dd></div>
+            <div><dt>Población</dt><dd>1.278.873</dd></div>
+            <div><dt>Superficie</dt><dd>29.911 km²</dd></div>
+          </dl>
+          <p class="prov__region">NEA</p>
+        </article>
+        <article class="prov" id="prov-ar-q" data-region="Patagonia">
+          <div class="prov__head">
+            <h2>Neuquén</h2>
+            <span class="prov__iso">AR-Q</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Neuquén</dd></div>
+            <div><dt>Población</dt><dd>710.814</dd></div>
+            <div><dt>Superficie</dt><dd>94.422 km²</dd></div>
+          </dl>
+          <p class="prov__region">Patagonia</p>
+        </article>
+        <article class="prov" id="prov-ar-r" data-region="Patagonia">
+          <div class="prov__head">
+            <h2>Río Negro</h2>
+            <span class="prov__iso">AR-R</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Viedma</dd></div>
+            <div><dt>Población</dt><dd>750.768</dd></div>
+            <div><dt>Superficie</dt><dd>202.169 km²</dd></div>
+          </dl>
+          <p class="prov__region">Patagonia</p>
+        </article>
+        <article class="prov" id="prov-ar-a" data-region="NOA">
+          <div class="prov__head">
+            <h2>Salta</h2>
+            <span class="prov__iso">AR-A</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Salta</dd></div>
+            <div><dt>Población</dt><dd>1.441.351</dd></div>
+            <div><dt>Superficie</dt><dd>155.341 km²</dd></div>
+          </dl>
+          <p class="prov__region">NOA</p>
+        </article>
+        <article class="prov" id="prov-ar-j" data-region="Cuyo">
+          <div class="prov__head">
+            <h2>San Juan</h2>
+            <span class="prov__iso">AR-J</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>San Juan</dd></div>
+            <div><dt>Población</dt><dd>822.583</dd></div>
+            <div><dt>Superficie</dt><dd>88.296 km²</dd></div>
+          </dl>
+          <p class="prov__region">Cuyo</p>
+        </article>
+        <article class="prov" id="prov-ar-d" data-region="Cuyo">
+          <div class="prov__head">
+            <h2>San Luis</h2>
+            <span class="prov__iso">AR-D</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>San Luis</dd></div>
+            <div><dt>Población</dt><dd>542.069</dd></div>
+            <div><dt>Superficie</dt><dd>75.347 km²</dd></div>
+          </dl>
+          <p class="prov__region">Cuyo</p>
+        </article>
+        <article class="prov" id="prov-ar-z" data-region="Patagonia">
+          <div class="prov__head">
+            <h2>Santa Cruz</h2>
+            <span class="prov__iso">AR-Z</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Río Gallegos</dd></div>
+            <div><dt>Población</dt><dd>337.226</dd></div>
+            <div><dt>Superficie</dt><dd>244.458 km²</dd></div>
+          </dl>
+          <p class="prov__region">Patagonia</p>
+        </article>
+        <article class="prov" id="prov-ar-s" data-region="Pampeana">
+          <div class="prov__head">
+            <h2>Santa Fe</h2>
+            <span class="prov__iso">AR-S</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Santa Fe</dd></div>
+            <div><dt>Población</dt><dd>3.544.908</dd></div>
+            <div><dt>Superficie</dt><dd>133.249 km²</dd></div>
+          </dl>
+          <p class="prov__region">Pampeana</p>
+        </article>
+        <article class="prov" id="prov-ar-g" data-region="NOA">
+          <div class="prov__head">
+            <h2>Santiago del Estero</h2>
+            <span class="prov__iso">AR-G</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Santiago del Estero</dd></div>
+            <div><dt>Población</dt><dd>1.060.906</dd></div>
+            <div><dt>Superficie</dt><dd>136.934 km²</dd></div>
+          </dl>
+          <p class="prov__region">NOA</p>
+        </article>
+        <article class="prov" id="prov-ar-v" data-region="Patagonia">
+          <div class="prov__head">
+            <h2>Tierra del Fuego</h2>
+            <span class="prov__iso">AR-V</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>Ushuaia</dd></div>
+            <div><dt>Población</dt><dd>185.732</dd></div>
+            <div><dt>Superficie</dt><dd>20.698 km²</dd></div>
+          </dl>
+          <p class="prov__region">Patagonia</p>
+        </article>
+        <article class="prov" id="prov-ar-t" data-region="NOA">
+          <div class="prov__head">
+            <h2>Tucumán</h2>
+            <span class="prov__iso">AR-T</span>
+          </div>
+          <dl class="prov__data">
+            <div><dt>Capital</dt><dd>San Miguel de Tucumán</dd></div>
+            <div><dt>Población</dt><dd>1.731.820</dd></div>
+            <div><dt>Superficie</dt><dd>22.592 km²</dd></div>
+          </dl>
+          <p class="prov__region">NOA</p>
+        </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>Autor: Leandro Carlino</span>
+      <span>Datos: INDEC (Censo 2022) e IGN.</span>
+    </div>
+  </footer>
+</body>
+</html>
