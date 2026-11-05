@@ -1,69 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta name="description" content="Información acerca del país Argentina">
-    <meta name="author" content="Leandro Matías Carlino Aráoz">
-    <link rel='stylesheet' type='text/css' media='screen' href='css/estilo.css'>
-    <title>Argentina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Argentina — un país en el fin del mundo</title>
+  <meta name="description" content="Argentina: geografía, historia y datos del país. Superficie, población, capital y un recorrido por los hechos que marcaron su historia.">
+  <meta name="author" content="Leandro Matías Carlino Aráoz">
+  <meta name="theme-color" content="#74acdf">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Argentina — un país en el fin del mundo">
+  <meta property="og:description" content="Geografía, historia y datos de la República Argentina.">
+  <meta property="og:locale" content="es_AR">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/main.js" defer></script>
 </head>
-
 <body>
-    <nav id="atajos">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="flag-bar" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="img/sol-argentina.webp" alt="" width="320" height="315">
+        <span>Argentina</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18"></path>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
         <ul>
-            <li><a href="#menu">Saltar a Navegación</a></li>
-            <li><a href="#contenido">Saltar a Contenido</a></li>
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="html/tablas.html">Estadísticas</a></li>
+          <li><a href="html/galeria.html">Galería</a></li>
+          <li><a href="html/formulario.html">Contacto</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <img src="img/sol-argentina.png" alt="sol de Argentina" id="banner">
-    </header>
+  <main id="contenido">
+    <section class="hero">
+      <div class="wrap">
+        <img class="hero__sun" src="img/sol-argentina.webp" alt="" width="320" height="315">
+        <p class="kicker">República Argentina</p>
+        <h1>Argentina</h1>
+        <p class="lede">
+          Un país soberano de América del Sur, ubicado en el extremo sur y sudeste del
+          subcontinente. Se organiza como una república democrática, representativa y federal,
+          con 23 provincias y la Ciudad Autónoma de Buenos Aires.
+        </p>
 
-    
-    <section id="contenedor-menu">
-        <a href="#contenedor-menu"><img src="img/burger_menu.png" id="abrir"></a>
-        <a href="#"><img src="img/cerrar_menu.png" id="cerrar"></a>
-
-        <nav id="menu">
-            <ul id="contenedor-enlaces">
-                <li><a href="#">Columnas</a></li>
-                <li><a href="html/tablas.html">Tablas</a></li>
-                <li><a href="html/galeria.html">Galeria</a></li>
-                <li><a href="html/formulario.html">Formulario</a></li>
-            </ul>
-        </nav>
+        <dl class="facts">
+          <div>
+            <dt>Capital</dt>
+            <dd>Buenos Aires</dd>
+          </div>
+          <div>
+            <dt>Idioma</dt>
+            <dd>Español</dd>
+          </div>
+          <div>
+            <dt>Superficie</dt>
+            <dd>2.780.400 km²</dd>
+          </div>
+          <div>
+            <dt>Población (2020)</dt>
+            <dd>45.195.777</dd>
+          </div>
+        </dl>
+      </div>
     </section>
 
-    <main id="contenido">
-        <section id="inicio">
-            <h1>Argentina</h1>
+    <div class="wrap">
+      <article class="article columns">
+        <h2>Como país</h2>
+        <p>
+          Argentina, oficialmente República Argentina, es un país soberano de América del Sur,
+          ubicado en el extremo sur y sudeste de dicho subcontinente. Adopta la forma de gobierno
+          republicana, democrática, representativa y federal.
+        </p>
+        <p>
+          Está organizada como un Estado federal descentralizado, integrado desde 1994 por un
+          Estado nacional y 24 jurisdicciones de primer orden o estados autogobernados: 23
+          provincias y la Ciudad Autónoma de Buenos Aires (CABA), esta última designada como
+          Capital Federal del país.
+        </p>
+        <p>
+          La economía argentina es la segunda más desarrollada e importante de Sudamérica. Según
+          el Banco Mundial, su PIB nominal es el 27.º del mundo. Por su importancia geopolítica y
+          económica, es uno de los tres estados soberanos latinoamericanos que integra el Grupo
+          de los 20 y forma parte del grupo de los NIC o nuevos países industrializados.
+        </p>
+        <p>
+          Es el único país latinoamericano con un centro de investigación y enseñanza científica
+          entre los diez mejores del mundo, y el país iberoamericano con mayor cantidad de premios
+          Nobel en ciencias. Su capacidad tecnológica y científica le permitió diseñar, producir y
+          exportar satélites, construir reactores nucleares y ser el primer productor de software
+          y aeronaves de la región, entre otras cosas. Es considerada una potencia regional.
+        </p>
+        <p>
+          Con una superficie de 2.780.400 km², es el país hispanohablante más extenso del planeta,
+          el segundo más grande de América Latina y el octavo del mundo, si se considera solo la
+          superficie continental sujeta a soberanía efectiva.
+        </p>
+        <p>
+          Su territorio reúne una gran diversidad de climas, causada por una amplitud latitudinal
+          que supera los 30°, una diferencia en la altitud que va de 107 m bajo el nivel del mar
+          a casi 7000 msnm, y la extensión del litoral marítimo, que alcanza 4725 km. Amplias
+          llanuras húmedas limitan con extensos desiertos y altas montañas, mientras que la
+          presencia de climas tropicales y subtropicales en el norte contrasta con las nevadas y
+          los fríos extremos de las zonas cordilleranas y del sur.
+        </p>
+        <p>
+          Su territorio continental americano, que abarca gran parte del Cono Sur, limita al norte
+          con Bolivia y Paraguay, al nordeste con Brasil, al este con Uruguay y el océano
+          Atlántico, al oeste con Chile y, siempre en su sector americano, al sur con Chile y las
+          aguas atlánticas del pasaje de Drake.
+        </p>
 
-            <article class="columnas">
-                <h2>Como país</h2>
-                <p>Argentina, oficialmente República Argentina, es un país soberano de América del Sur, ubicado en el extremo sur y sudeste de dicho subcontinente. Adopta la forma de gobierno republicana, democrática, representativa y federal.</p>
-                <p>La Argentina está organizada como un Estado federal descentralizado, integrado desde 1994 por un Estado nacional y 24 jurisdicciones de primer orden o estados autogobernados, que son 23 provincias y la Ciudad Autónoma de Buenos Aires (CABA), esta última designada como Capital Federal del país. </p>
-                <p>La economía argentina es la segunda más desarrollada e importante en Sudamérica. Según el Banco Mundial, su PIB nominal es el 27.º del mundo. Debido a su importancia geopolítica y económica, es uno de los tres estados soberanos latinoamericanos que forma parte del denominado Grupo de los 20 e integra además el grupo de los NIC o nuevos países industrializados.</p>
-                <p>Es el único país latinoamericano que tiene un centro de investigación y enseñanza científica entre los diez mejores del mundo, y el país iberoamericano con mayor cantidad de premios Nobel en ciencias. Su capacidad tecnológica y científica le ha permitido diseñar, producir y exportar satélites, construir reactores nucleares y ser el primer productor de software, aeronaves, entre otras cosas. Es considerada una potencia regional.</p>
-                <p>Con una superficie de 2 780 400 km², es el país hispanohablante más extenso del planeta, el segundo más grande de América Latina y octavo en el mundo, si se considera solo la superficie continental sujeta a soberanía efectiva. </p>
-                <p>Su territorio reúne una gran diversidad de climas, causada por una amplitud latitudinal que supera los 30°, una diferencia en la altitud que va de 107 m bajo el nivel del mar a casi 7000 msnm y la extensión del litoral marítimo que alcanza 4725 km. Amplias llanuras húmedas limitan con extensos desiertos y altas montañas, mientras que la presencia de climas tropicales y subtropicales en el norte, contrastan con las nevadas y fríos extremos en las zonas cordilleranas y el sur.</p>
-                <p>Su territorio continental americano, que abarca gran parte del Cono Sur, limita al norte con Bolivia y Paraguay, al nordeste con Brasil, al este con Uruguay y el océano Atlántico, al oeste con Chile y, siempre en su sector americano, al sur con Chile y las aguas atlánticas del pasaje de Drake.</p>
-                <h2>Historia</h2>
-                <p>Los primeros registros de pobladores en el actual territorio argentino se remontan a los trece mil años AP, durante el Paleoamericano. En tiempos protohistóricos, periodo precolombino, fue habitado por numerosos pueblos indígenas, algunos de los cuales aún habitan el país; entre ellos guaycurúes, guaraníes, mapuches, tehuelches y diaguitas, estos últimos formaban parte del Imperio Incaico.</p>
-                <p>La colonización española del actual territorio argentino comenzó con viajes exploratorios desde el año 1512, el establecimiento de una población en 1528 y la distribución del territorio a los adelantados. Más tarde, quedó bajo la jurisdicción del Virreinato del Perú. </p>
-                <p>En 1776, la Corona española fundó el Virreinato del Río de la Plata, el cual sería una entidad política precedente a la actual República Argentina.</p>
-                <p>El 25 de mayo de 1810 alcanzó la independencia de facto cuando fue depuesto el último virrey español que gobernó desde Buenos Aires, organizándose la Primera Junta de gobierno. El 9 de julio de 1816 fue proclamada la independencia en San Miguel de Tucumán.</p>
-            </article>
-        </section>
-    </main>
+        <h2>Historia</h2>
+        <p>
+          Los primeros registros de pobladores en el actual territorio argentino se remontan a los
+          trece mil años AP, durante el Paleoamericano. En tiempos protohistóricos, periodo
+          precolombino, fue habitado por numerosos pueblos indígenas, algunos de los cuales aún
+          habitan el país: guaycurúes, guaraníes, mapuches, tehuelches y diaguitas, estos últimos
+          formaban parte del Imperio Incaico.
+        </p>
+        <p>
+          La colonización española del actual territorio argentino comenzó con viajes
+          exploratorios desde el año 1512, el establecimiento de una población en 1528 y la
+          distribución del territorio entre los adelantados. Más tarde quedó bajo la jurisdicción
+          del Virreinato del Perú.
+        </p>
+        <p>
+          En 1776, la Corona española fundó el Virreinato del Río de la Plata, entidad política
+          precedente a la actual República Argentina.
+        </p>
+        <p>
+          El 25 de mayo de 1810 alcanzó la independencia de facto cuando fue depuesto el último
+          virrey español que gobernaba desde Buenos Aires, organizándose la Primera Junta de
+          gobierno. El 9 de julio de 1816 fue proclamada la independencia en San Miguel de
+          Tucumán.
+        </p>
+      </article>
+    </div>
+  </main>
 
-    <footer>
-        <h3>Autor: Leandro Carlino</h3>
-
-
-    </footer>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>Autor: Leandro Carlino</span>
+      <span>Contenido adaptado de Wikipedia, bajo licencia CC BY-SA.</span>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,64 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta name="description" content="Información acerca del país Argentina">
-    <meta name="author" content="Leandro Matías Carlino Aráoz">
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/estilo.css'>
-    <title>Argentina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería — Argentina de norte a sur</title>
+  <meta name="description" content="Doce imágenes de la Argentina: Buenos Aires, Tucumán, Córdoba, Rosario, Salta, Corrientes, el Fitz Roy, las Cataratas del Iguazú, la Quebrada de Humahuaca y Ushuaia.">
+  <meta name="author" content="Leandro Matías Carlino Aráoz">
+  <meta name="theme-color" content="#74acdf">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Galería — Argentina de norte a sur">
+  <meta property="og:description" content="Doce imágenes de la Argentina, desde las Cataratas del Iguazú hasta el canal Beagle.">
+  <meta property="og:locale" content="es_AR">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <script src="../js/main.js" defer></script>
 </head>
-
 <body>
-    <nav id="atajos">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="flag-bar" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html">
+        <img src="../img/sol-argentina.webp" alt="" width="320" height="315">
+        <span>Argentina</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18"></path>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
         <ul>
-            <li><a href="#menu">Saltar a Navegación</a></li>
-            <li><a href="#section-galeria">Saltar a Contenido</a></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="tablas.html">Estadísticas</a></li>
+          <li><a href="galeria.html" aria-current="page">Galería</a></li>
+          <li><a href="formulario.html">Contacto</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <img src="../img/sol-argentina.png" alt="sol de Argentina" id="banner">
-    </header>
+  <main id="contenido">
+    <div class="wrap">
+      <header class="page-head">
+        <p class="kicker">Doce postales</p>
+        <h1>Argentina de norte a sur</h1>
+        <p>
+          Desde las Cataratas del Iguazú hasta el canal Beagle: ciudades, quebradas, hielos y
+          bosques a lo largo de más de 30 grados de latitud.
+        </p>
+      </header>
 
-    
-    <section id="contenedor-menu">
-        <a href="#contenedor-menu"><img src="../img/burger_menu.png" id="abrir"></a>
-        <a href="#"><img src="../img/cerrar_menu.png" id="cerrar"></a>
+      <ul class="gallery">
+        <li>
+          <figure>
+            <img src="../img/1-caba.webp" alt="Vista aérea de Buenos Aires al atardecer con el Obelisco y la Avenida 9 de Julio" width="650" height="500" decoding="async">
+            <figcaption><span>Ciudad de Buenos Aires</span>El Obelisco y la 9 de Julio al atardecer</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/2-tucuman.webp" alt="Vista aérea de San Miguel de Tucumán con sus edificios y plazas" width="650" height="500" decoding="async">
+            <figcaption><span>Tucumán</span>San Miguel de Tucumán desde el aire</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/3-cordoba.webp" alt="Catedral de Córdoba entre edificios modernos del centro" width="650" height="500" decoding="async">
+            <figcaption><span>Córdoba</span>La Catedral entre los edificios del centro</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/4-rosario.webp" alt="Atardecer sobre el río Paraná con la costanera y el Monumento a la Bandera de Rosario" width="650" height="500" loading="lazy" decoding="async">
+            <figcaption><span>Rosario</span>Atardecer sobre el río Paraná</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/5-salta.webp" alt="Teleférico sobre la ciudad de Salta con la cordillera nevada de fondo" width="650" height="500" loading="lazy" decoding="async">
+            <figcaption><span>Salta</span>El teleférico y la cordillera de fondo</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/6-corrientes.webp" alt="Puente General Belgrano sobre el río Paraná en Corrientes" width="650" height="500" loading="lazy" decoding="async">
+            <figcaption><span>Corrientes</span>El puente General Belgrano sobre el Paraná</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/7-paisaje.webp" alt="Cerro Chaltén o Fitz Roy con el río de deshielo entre rocas" width="650" height="500" loading="lazy" decoding="async">
+            <figcaption><span>Santa Cruz</span>El cerro Chaltén y su río de deshielo</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/8-paisaje.webp" alt="Cataratas del Iguazú con el salto rodeado de selva" width="650" height="500" loading="lazy" decoding="async">
+            <figcaption><span>Misiones</span>Las Cataratas del Iguazú</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/9-paisaje.webp" alt="Cardones y cerros de colores en la Quebrada de Humahuaca" width="650" height="500" loading="lazy" decoding="async">
+            <figcaption><span>Jujuy</span>Cardones en la Quebrada de Humahuaca</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/10-paisaje.webp" alt="Amanecer rosado sobre el cerro Fitz Roy y el río" width="650" height="500" loading="lazy" decoding="async">
+            <figcaption><span>Santa Cruz</span>Amanecer sobre el Fitz Roy</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/11-paisaje.webp" alt="Faro Les Éclaireurs sobre una isla en el canal Beagle, cerca de Ushuaia" width="650" height="500" loading="lazy" decoding="async">
+            <figcaption><span>Ushuaia</span>El faro Les Éclaireurs en el canal Beagle</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/12-paisaje.webp" alt="Valle patagónico verde con estancias y montañas al fondo" width="650" height="500" loading="lazy" decoding="async">
+            <figcaption><span>Patagonia</span>Un valle con estancias y montañas</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </main>
 
-        <nav id="menu">
-            <ul id="contenedor-enlaces">
-                <li><a href="../index.html">Columnas</a></li>
-                <li><a href="tablas.html">Tablas</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="formulario.html">Formulario</a></li>
-            </ul>
-        </nav>
-    </section>
-
-    <main id="section-galeria">
-        <section class="galeria">
-            <article>
-                <figure><img src="../img/1-caba.jpg" alt="ciudad de buenos aires"></figure>
-                <figure><img src="../img/2-tucuman.jpg" alt="ciudad de tucuman"></figure>
-                <figure><img src="../img/3-cordoba.jpg" alt="ciudad de cordoba"></figure>
-                <figure><img src="../img/4-rosario.jpg" alt="ciudad de rosario"></figure>
-                <figure><img src="../img/5-salta.jpg" alt="ciudad de salta"></figure>
-                <figure><img src="../img/6-corrientes.jpg" alt="ciudad de corrientes"></figure>
-                <figure><img src="../img/7- paisaje.jpg" alt="paisaje de argentina"></figure>
-                <figure><img src="../img/8-paisaje.jpg" alt="paisaje de argentina"></figure>
-                <figure><img src="../img/9-paisaje.jpg" alt="paisaje de argentina"></figure>
-                <figure><img src="../img/10-paisaje.jpg" alt="paisaje de argentina"></figure>
-                <figure><img src="../img/11-paisaje.jpg" alt="paisaje de argentina"></figure>
-                <figure><img src="../img/12-paisaje.JPG" alt="paisaje de argentina"></figure>
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <h3>Autor: Leandro Carlino</h3>
-    </footer>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>Autor: Leandro Carlino</span>
+      <span>Doce imágenes de la Argentina continental.</span>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,73 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta name="description" content="Información acerca del país Argentina">
-    <meta name="author" content="Leandro Matías Carlino Aráoz">
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/estilo.css'>
-    <title>Argentina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto — Argentina</title>
+  <meta name="description" content="Formulario de contacto de ejemplo: nombre, correo electrónico y mensaje.">
+  <meta name="author" content="Leandro Matías Carlino Aráoz">
+  <meta name="theme-color" content="#74acdf">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contacto — Argentina">
+  <meta property="og:description" content="Formulario de contacto de ejemplo.">
+  <meta property="og:locale" content="es_AR">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <script src="../js/main.js" defer></script>
 </head>
-
 <body>
-    <nav id="atajos">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="flag-bar" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html">
+        <img src="../img/sol-argentina.webp" alt="" width="320" height="315">
+        <span>Argentina</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18"></path>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
         <ul>
-            <li><a href="#menu">Saltar a Navegación</a></li>
-            <li><a href="#contenido">Saltar a Contenido</a></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="tablas.html">Estadísticas</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="formulario.html" aria-current="page">Contacto</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
+  <main id="contenido">
+    <div class="wrap">
+      <header class="page-head">
+        <p class="kicker">Escribinos</p>
+        <h1>Contacto</h1>
+        <p>Formulario de ejemplo, sin servidor detrás: al enviarlo se muestra una confirmación y no se transmite ningún dato.</p>
+      </header>
 
-    <header>
-        <img src="../img/sol-argentina.png" alt="sol de Argentina" id="banner">
-    </header>
+      <form class="form-card" id="contacto" data-demo autocomplete="on">
+        <fieldset>
+          <legend>Datos personales</legend>
 
-    
-    <section id="contenedor-menu">
-        <a href="#contenedor-menu"><img src="../img/burger_menu.png" id="abrir"></a>
-        <a href="#"><img src="../img/cerrar_menu.png" id="cerrar"></a>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre"
+                   autocomplete="name" maxlength="50" required>
+          </div>
 
-        <nav id="menu">
-            <ul id="contenedor-enlaces">
-                <li><a href="../index.html">Columnas</a></li>
-                <li><a href="tablas.html">Tablas</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="#">Formulario</a></li>
-            </ul>
-        </nav>
-    </section>
+          <div class="field">
+            <label for="mail">Correo electrónico</label>
+            <input type="email" id="mail" name="mail" placeholder="nombre@ejemplo.com"
+                   autocomplete="email" required>
+          </div>
 
-    <main id="contenido">
-        <section id="inicio">
-            <article class="formulario">
-                <h1 class="contacto_titulo">Contacto</h1>
-                <form action="labo2.php" method="POST">
-                    <fieldset class="datos">
-                        <legend>Datos Personales</legend>
-                        <label for="nombre">Nombre:
-                            <input type="text" id="nombre" name="nom" placeholder="Ingrese su nombre" required maxlength="50">
-                        </label>
-                        <label for="mail">Correo electronico:
-                            <input type="email" id="mail" name="mail" placeholder="Ingrese su casilla de mail" required>
-                        </label>
-                        <label for="mensaje" class="mensaje">Ingrese su mensaje:
-                            <textarea cols="20" rows="10" id="mensaje" name="msj" placeholder="Ingrese su mensaje"></textarea>
-                        </label>
-                    </fieldset>
-                    <fieldset class="botones">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpíar">
-                    </fieldset>
-                </form>
-        </section>
-    </main>
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" maxlength="1000"
+                      placeholder="Escribí tu mensaje" aria-describedby="mensaje-ayuda"></textarea>
+            <span class="hint" id="mensaje-ayuda">Opcional. Hasta 1000 caracteres.</span>
+          </div>
+        </fieldset>
 
-    <footer>
-        <h3>Autor: Leandro Carlino</h3>
+        <div class="actions">
+          <button type="submit" class="btn btn--primary">Enviar</button>
+          <button type="reset" class="btn btn--ghost">Limpiar</button>
+        </div>
 
+        <p class="form-status" id="form-status" role="status" hidden></p>
+      </form>
+    </div>
+  </main>
 
-    </footer>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>Autor: Leandro Carlino</span>
+      <span>Formulario de demostración, sin envío de datos.</span>
+    </div>
+  </footer>
 </body>
 </html>
