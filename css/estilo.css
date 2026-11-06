@@ -519,36 +519,137 @@ tbody tr:last-child td { border-bottom: 0; }
 
 tbody td { color: var(--ink-soft); }
 
-/* Móvil: cada fila se convierte en una ficha con etiquetas */
+/* Móvil: cada fila se convierte en una ficha con etiquetas (salvo .table-key) */
 @media (max-width: 47.99rem) {
-  thead { display: none; }
+  table:not(.table-key) thead { display: none; }
 
-  table, tbody, tr, td { display: block; width: 100%; }
+  table:not(.table-key),
+  table:not(.table-key) tbody,
+  table:not(.table-key) tr,
+  table:not(.table-key) th,
+  table:not(.table-key) td { display: block; width: 100%; }
 
-  tr {
+  table:not(.table-key) tr {
     border: 1px solid var(--line);
     border-radius: 10px;
     margin-bottom: 1rem;
     overflow: hidden;
   }
 
-  td {
-    display: grid;
-    grid-template-columns: 11rem minmax(0, 1fr);
-    gap: 0.5rem;
+  table:not(.table-key) tbody th {
+    padding: 0.7rem 0.85rem;
+    background: var(--celeste-soft);
     border-bottom: 1px solid var(--line);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
   }
 
-  td:last-child { border-bottom: 0; }
+  table:not(.table-key) td {
+    display: grid;
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+    gap: 0.5rem;
+    align-items: baseline;
+    padding: 0.55rem 0.85rem;
+  }
 
-  td::before {
+  table:not(.table-key) tr > td:last-child { border-bottom: 0; }
+
+  table:not(.table-key) td::before {
     content: attr(data-label);
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--celeste-ink);
   }
+
+  table:not(.table-key) td.num { text-align: left; }
+}
+
+/* --------------------------------------------------------------------------
+   Estadísticas
+   -------------------------------------------------------------------------- */
+
+.stat-block { margin-bottom: 3rem; }
+.stat-block:last-child { margin-bottom: 0; }
+
+.stat-title {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.6vw, 1.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.stat-note {
+  margin: 0 0 1rem;
+  max-width: 46rem;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.stat-note--foot { margin: 0.9rem 0 0; font-size: 0.78rem; }
+
+/* Tabla de dos columnas: etiqueta / valor */
+.table-key tbody th,
+.table-key tbody td {
+  padding: 0.65rem 0.85rem;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+
+.table-key tbody th {
+  width: 42%;
+  background: none;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.table-key tbody td {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.table-key tbody tr:last-child th,
+.table-key tbody tr:last-child td { border-bottom: 0; }
+
+/* Números y barras */
+.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.rank {
+  display: inline-block;
+  min-width: 1.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.bar {
+  display: block;
+  min-width: 4rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--celeste-soft);
+  overflow: hidden;
+}
+
+.bar__fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--celeste);
 }
 
 /* --------------------------------------------------------------------------

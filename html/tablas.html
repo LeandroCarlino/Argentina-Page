@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Estadísticas del país — Argentina</title>
-  <meta name="description" content="Datos de referencia de la Argentina: capital, idioma, forma de gobierno, independencia, superficie, población, PIB e IDH.">
+  <meta name="description" content="Estadísticas de la Argentina: ficha del país, población en los once censos nacionales desde 1869 y las 24 jurisdicciones con superficie y densidad.">
   <meta name="author" content="Leandro Matías Carlino Aráoz">
   <meta name="theme-color" content="#74acdf">
   <meta name="color-scheme" content="light dark">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Estadísticas del país — Argentina">
-  <meta property="og:description" content="Capital, idioma, gobierno, superficie, población, PIB e IDH de la Argentina.">
+  <meta property="og:description" content="Ficha del país, población por censo y las 24 jurisdicciones.">
   <meta property="og:locale" content="es_AR">
   <meta property="og:url" content="https://leandrocarlino.github.io/Argentina-Page/html/tablas.html">
   <meta property="og:image" content="https://leandrocarlino.github.io/Argentina-Page/img/og-argentina.jpg">
@@ -61,45 +61,303 @@
       <header class="page-head">
         <p class="kicker">Ficha del país</p>
         <h1>Estadísticas</h1>
-        <p>Datos de referencia de la República Argentina. En pantallas chicas la tabla se muestra como una ficha.</p>
+        <p>
+          Datos de referencia de la República Argentina: la ficha del país, la población en los
+          once censos nacionales y las 24 jurisdicciones ordenadas por población.
+        </p>
       </header>
 
-      <div class="table-card">
-        <table>
-          <caption>Argentina · datos de referencia (2020)</caption>
-          <thead>
-            <tr>
-              <th scope="col">Capital</th>
-              <th scope="col">Idioma</th>
-              <th scope="col">Forma de gobierno</th>
-              <th scope="col">Independencia</th>
-              <th scope="col">Superficie</th>
-              <th scope="col">Población</th>
-              <th scope="col">PIB PPA</th>
-              <th scope="col">IDH</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td data-label="Capital">Buenos Aires</td>
-              <td data-label="Idioma">Castellano</td>
-              <td data-label="Forma de gobierno">República federal</td>
-              <td data-label="Independencia">9 de julio de 1816</td>
-              <td data-label="Superficie">2.780.400 km²</td>
-              <td data-label="Población (2020)">45.195.777 hab.</td>
-              <td data-label="PIB PPA (2020)">USD 924.540 mill.</td>
-              <td data-label="IDH (2020)">0,845 (muy alto)</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <section class="stat-block" aria-labelledby="ficha-titulo">
+        <h2 class="stat-title" id="ficha-titulo">Ficha del país</h2>
+        <p class="stat-note">Datos generales, con el año de referencia entre paréntesis cuando corresponde.</p>
+        <div class="table-card">
+          <table class="table-key">
+            <caption>Argentina · datos generales</caption>
+            <tbody>
+              <tr><th scope="row">Capital</th><td>Buenos Aires</td></tr>
+              <tr><th scope="row">Idioma oficial</th><td>Español</td></tr>
+              <tr><th scope="row">Moneda</th><td>Peso argentino (ARS)</td></tr>
+              <tr><th scope="row">Forma de gobierno</th><td>República federal democrática</td></tr>
+              <tr><th scope="row">Independencia</th><td>9 de julio de 1816</td></tr>
+              <tr><th scope="row">Superficie continental</th><td>2.780.400 km²</td></tr>
+              <tr><th scope="row">Población (Censo 2022)</th><td>45.892.285</td></tr>
+              <tr><th scope="row">Densidad (2022)</th><td>16,5 hab./km²</td></tr>
+              <tr><th scope="row">Huso horario</th><td>UTC−3</td></tr>
+              <tr><th scope="row">Dominio de internet</th><td>.ar</td></tr>
+              <tr><th scope="row">Código telefónico</th><td>+54</td></tr>
+              <tr><th scope="row">ISO 3166-1</th><td>AR / ARG</td></tr>
+              <tr><th scope="row">PIB PPA (2020)</th><td>USD 924.540 millones</td></tr>
+              <tr><th scope="row">IDH (2020)</th><td>0,845 (muy alto)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="stat-block" aria-labelledby="censo-titulo">
+        <h2 class="stat-title" id="censo-titulo">Población por censo</h2>
+        <p class="stat-note">
+          Once censos nacionales desde 1869. La columna de escala compara cada censo con el
+          máximo, que es el de 2022.
+        </p>
+        <div class="table-card">
+          <table>
+            <caption>Población total del país · censos nacionales</caption>
+            <thead>
+              <tr>
+                <th scope="col">Censo</th>
+                <th scope="col">Población</th>
+                <th scope="col">Variación</th>
+                <th scope="col">Escala</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1869</th>
+                <td data-label="Población">1.877.490</td>
+                <td data-label="Variación" class="num">—</td>
+                <td data-label="Escala"><span class="bar"><span class="bar__fill" style="width:4.1%"></span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">1895</th>
+                <td data-label="Población">4.094.911</td>
+                <td data-label="Variación" class="num">+118,1%</td>
+                <td data-label="Escala"><span class="bar"><span class="bar__fill" style="width:8.9%"></span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">1914</th>
+                <td data-label="Población">7.885.237</td>
+                <td data-label="Variación" class="num">+92,6%</td>
+                <td data-label="Escala"><span class="bar"><span class="bar__fill" style="width:17.2%"></span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">1947</th>
+                <td data-label="Población">15.893.811</td>
+                <td data-label="Variación" class="num">+101,6%</td>
+                <td data-label="Escala"><span class="bar"><span class="bar__fill" style="width:34.6%"></span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">1960</th>
+                <td data-label="Población">20.013.793</td>
+                <td data-label="Variación" class="num">+25,9%</td>
+                <td data-label="Escala"><span class="bar"><span class="bar__fill" style="width:43.6%"></span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">1970</th>
+                <td data-label="Población">23.364.431</td>
+                <td data-label="Variación" class="num">+16,7%</td>
+                <td data-label="Escala"><span class="bar"><span class="bar__fill" style="width:50.9%"></span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">1980</th>
+                <td data-label="Población">27.949.480</td>
+                <td data-label="Variación" class="num">+19,6%</td>
+                <td data-label="Escala"><span class="bar"><span class="bar__fill" style="width:60.9%"></span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">1991</th>
+                <td data-label="Población">32.615.528</td>
+                <td data-label="Variación" class="num">+16,7%</td>
+                <td data-label="Escala"><span class="bar"><span class="bar__fill" style="width:71.1%"></span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">2001</th>
+                <td data-label="Población">36.260.130</td>
+                <td data-label="Variación" class="num">+11,2%</td>
+                <td data-label="Escala"><span class="bar"><span class="bar__fill" style="width:79.0%"></span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">2010</th>
+                <td data-label="Población">40.117.096</td>
+                <td data-label="Variación" class="num">+10,6%</td>
+                <td data-label="Escala"><span class="bar"><span class="bar__fill" style="width:87.4%"></span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">2022</th>
+                <td data-label="Población">45.892.285</td>
+                <td data-label="Variación" class="num">+14,4%</td>
+                <td data-label="Escala"><span class="bar"><span class="bar__fill" style="width:100.0%"></span></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="stat-block" aria-labelledby="jurisdicciones-titulo">
+        <h2 class="stat-title" id="jurisdicciones-titulo">Las 24 jurisdicciones</h2>
+        <p class="stat-note">
+          Ordenadas por población. La densidad se calcula sobre la superficie de cada
+          jurisdicción. Para el mapa, <a href="provincias.html">mirá la página de provincias</a>.
+        </p>
+        <div class="table-card">
+          <table>
+            <caption>Censo 2022 · población, superficie y densidad</caption>
+            <thead>
+              <tr>
+                <th scope="col">Jurisdicción</th>
+                <th scope="col">Población</th>
+                <th scope="col">Superficie</th>
+                <th scope="col">Densidad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><span class="rank">1</span>Buenos Aires</th>
+                <td data-label="Población">17.523.996</td>
+                <td data-label="Superficie">305.907 km²</td>
+                <td data-label="Densidad">57,3 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">2</span>Córdoba</th>
+                <td data-label="Población">3.840.905</td>
+                <td data-label="Superficie">164.708 km²</td>
+                <td data-label="Densidad">23,3 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">3</span>Santa Fe</th>
+                <td data-label="Población">3.544.908</td>
+                <td data-label="Superficie">133.249 km²</td>
+                <td data-label="Densidad">26,6 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">4</span>Ciudad Autónoma de Buenos Aires</th>
+                <td data-label="Población">3.121.707</td>
+                <td data-label="Superficie">206 km²</td>
+                <td data-label="Densidad">15.153,9 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">5</span>Mendoza</th>
+                <td data-label="Población">2.043.540</td>
+                <td data-label="Superficie">149.069 km²</td>
+                <td data-label="Densidad">13,7 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">6</span>Tucumán</th>
+                <td data-label="Población">1.731.820</td>
+                <td data-label="Superficie">22.592 km²</td>
+                <td data-label="Densidad">76,7 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">7</span>Salta</th>
+                <td data-label="Población">1.441.351</td>
+                <td data-label="Superficie">155.341 km²</td>
+                <td data-label="Densidad">9,3 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">8</span>Entre Ríos</th>
+                <td data-label="Población">1.425.578</td>
+                <td data-label="Superficie">78.384 km²</td>
+                <td data-label="Densidad">18,2 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">9</span>Misiones</th>
+                <td data-label="Población">1.278.873</td>
+                <td data-label="Superficie">29.911 km²</td>
+                <td data-label="Densidad">42,8 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">10</span>Corrientes</th>
+                <td data-label="Población">1.212.696</td>
+                <td data-label="Superficie">89.123 km²</td>
+                <td data-label="Densidad">13,6 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">11</span>Chaco</th>
+                <td data-label="Población">1.129.606</td>
+                <td data-label="Superficie">99.763 km²</td>
+                <td data-label="Densidad">11,3 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">12</span>Santiago del Estero</th>
+                <td data-label="Población">1.060.906</td>
+                <td data-label="Superficie">136.934 km²</td>
+                <td data-label="Densidad">7,7 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">13</span>San Juan</th>
+                <td data-label="Población">822.583</td>
+                <td data-label="Superficie">88.296 km²</td>
+                <td data-label="Densidad">9,3 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">14</span>Jujuy</th>
+                <td data-label="Población">811.611</td>
+                <td data-label="Superficie">53.244 km²</td>
+                <td data-label="Densidad">15,2 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">15</span>Río Negro</th>
+                <td data-label="Población">750.768</td>
+                <td data-label="Superficie">202.169 km²</td>
+                <td data-label="Densidad">3,7 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">16</span>Neuquén</th>
+                <td data-label="Población">710.814</td>
+                <td data-label="Superficie">94.422 km²</td>
+                <td data-label="Densidad">7,5 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">17</span>Formosa</th>
+                <td data-label="Población">607.419</td>
+                <td data-label="Superficie">75.488 km²</td>
+                <td data-label="Densidad">8,0 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">18</span>Chubut</th>
+                <td data-label="Población">592.621</td>
+                <td data-label="Superficie">224.302 km²</td>
+                <td data-label="Densidad">2,6 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">19</span>San Luis</th>
+                <td data-label="Población">542.069</td>
+                <td data-label="Superficie">75.347 km²</td>
+                <td data-label="Densidad">7,2 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">20</span>Catamarca</th>
+                <td data-label="Población">429.562</td>
+                <td data-label="Superficie">101.486 km²</td>
+                <td data-label="Densidad">4,2 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">21</span>La Rioja</th>
+                <td data-label="Población">383.865</td>
+                <td data-label="Superficie">91.494 km²</td>
+                <td data-label="Densidad">4,2 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">22</span>La Pampa</th>
+                <td data-label="Población">361.859</td>
+                <td data-label="Superficie">143.493 km²</td>
+                <td data-label="Densidad">2,5 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">23</span>Santa Cruz</th>
+                <td data-label="Población">337.226</td>
+                <td data-label="Superficie">244.458 km²</td>
+                <td data-label="Densidad">1,4 hab./km²</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="rank">24</span>Tierra del Fuego</th>
+                <td data-label="Población">185.732</td>
+                <td data-label="Superficie">20.698 km²</td>
+                <td data-label="Densidad">9,0 hab./km²</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="stat-note stat-note--foot">
+          La suma por jurisdicción puede diferir levemente del total nacional publicado.
+        </p>
+      </section>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <span>Autor: Leandro Carlino</span>
-      <span>Datos de referencia del año 2020.</span>
+      <span>Datos: INDEC (Censos nacionales) e IGN.</span>
     </div>
   </footer>
 </body>

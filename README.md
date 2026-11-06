@@ -11,7 +11,7 @@ Sitio estático de cinco páginas sobre la República Argentina: portada con la 
 | `index.html` | Datos rápidos, artículo sobre el país y su historia, y línea de tiempo |
 | `html/provincias.html` | Mapa interactivo + las 24 jurisdicciones, con filtro por región |
 | `html/galeria.html` | Doce fotos de norte a sur, con lightbox y epígrafe |
-| `html/tablas.html` | Estadísticas del país; en móvil la tabla se vuelve una ficha |
+| `html/tablas.html` | Ficha del país, población por censo y las 24 jurisdicciones |
 | `html/formulario.html` | Formulario de contacto de demostración |
 
 ## Características
@@ -19,6 +19,7 @@ Sitio estático de cinco páginas sobre la República Argentina: portada con la 
 - **Mapa político interactivo** generado desde el GeoJSON oficial del IGN, simplificado a ~25 KB de SVG inline. Cada provincia enlaza a su ficha; el filtro por región (NOA, NEA, Cuyo, Pampeana, Patagonia, CABA) actualiza el listado y el contador en vivo.
 - **Lightbox** sobre `<dialog>` nativo: foco gestionado, `Escape`, flechas ←/→, contador y vuelta al punto de origen.
 - **Línea de tiempo** de 1516 a 2001 integrada en la portada.
+- **Estadísticas** en tres tablas: ficha del país (14 indicadores), población en los once censos nacionales desde 1869 con variación intercensal y barra proporcional, y las 24 jurisdicciones ordenadas por población con densidad calculada. En móvil solo las tablas de datos se convierten en fichas; la de dos columnas sigue siendo tabla.
 - **Mobile-first**: menú con botón accesible (`aria-expanded`), tabla que se convierte en ficha, mapa y grilla a una columna.
 - **Accesibilidad**: skip link, `aria-current`, `aria-pressed`, `aria-live`, foco visible y `prefers-reduced-motion`.
 - **Modo oscuro** automático según `prefers-color-scheme`.
